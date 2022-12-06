@@ -5,7 +5,7 @@
 
         @yield('content')
 
-        {{-- @include('template.partials._sidebar') --}}
+        @include('template.partials._sidebar')
 
     </div>
     <!-- /.row -->

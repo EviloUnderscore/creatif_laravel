@@ -9,7 +9,7 @@ class ProjetsController extends Controller
     public function index() {
         return view('projets.index', [
             'projets' => Projet::orderBy('dateCreation', 'ASC')
-            ->take(20)->get()
+            ->take(5)->get()
         ]);
     }
 
