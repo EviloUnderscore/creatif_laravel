@@ -4,9 +4,6 @@
 @endsection
 @section('content')
 
-  <!-- Post Content Column -->
-  <div class="col-lg-8">
-
     <!-- Page Heading -->
 
     <!-- Title -->
@@ -43,7 +40,5 @@
       </div>
     </div>
     <!-- /.row -->
-    <hr>
-  </div>
 
 @endsection

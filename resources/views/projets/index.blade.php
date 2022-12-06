@@ -2,8 +2,6 @@
 @section('title', 'Projets')
 @section('content')
 
-<!-- Post Content Column -->
-<div class="col-lg-8">
     <!-- Page Heading -->
     <!-- Title -->
     <h1 class="mt-4">Les projets <small>Design capill'Hair</small></h1>
@@ -41,11 +39,7 @@
             </ul>
         </div>
     </div>
-    <!-- /.row -->
-    <hr>
 
     @endforeach
-
-</div>
 
 @endsection
