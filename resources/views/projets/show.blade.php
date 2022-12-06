@@ -10,7 +10,7 @@
     <h1 class="mt-4">{{$projet->titre}}</h1>
     <p class="lead">
       par
-      <a href="artiste_details.html">{{$projet->creatif->pseudo}}</a> le {{$projet->dateCreation}}
+      <a href="artiste_details.html">{{$projet->creatif->pseudo}}</a> le {{Carbon\Carbon::parse($projet->dateCreation)->format('d-m-Y')}}
     </p>
 
     <hr>
