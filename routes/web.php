@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\ProjetsController::class, 'index'])
     ->name('projets.index');
 
-Route::get('/projets/{id}/{slug}.html', [\App\Http\Controllers\ProjetsController::class, 'show'])
+Route::get('/projets/{projet}/{slug}.html', [\App\Http\Controllers\ProjetsController::class, 'show'])
     ->whereNumber('id')
     ->name('projets.show');

@@ -13,9 +13,7 @@ class ProjetsController extends Controller
         ]);
     }
 
-    public function show(int $id){
-        return view('projets.show', [
-            'projet' => Projet::find($id)
-        ]);
+    public function show(Projet $projet){
+        return view('projets.show', compact('projet'));
     }
 }

@@ -12,7 +12,7 @@
         
     <div class="row">
         <div class="col-md-4">
-            <a href="{{route('projets.show', ['id' => $projet->id, 'slug' => Str::slug($projet->titre)])}}">
+            <a href="{{route('projets.show', ['projet' => $projet->id, 'slug' => Str::slug($projet->titre)])}}">
             <img class="img-fluid rounded mb-3 mb-md-0" src="{{asset('images/'.$projet->image)}}" alt="">
             </a>
         </div>
@@ -22,14 +22,14 @@
             </h3>
             <p class="lead">
                 par
-                <a href="{{route('projets.show', ['id' => $projet->id, 'slug' => Str::slug($projet->titre)])}}">
+                <a href="creatif">
                     {{$projet->creatif->pseudo}}
                 </a> le {{Carbon\Carbon::parse($projet->dateCreation)->format('d-m-Y')}}
             </p>
             <p>
                 {{$projet->texte}}
             </p>
-            <a class="btn btn-primary" href="{{route('projets.show', ['id' => $projet->id, 'slug' => Str::slug($projet->titre)])}}">View Project</a>
+            <a class="btn btn-primary" href="{{route('projets.show', ['projet' => $projet->id, 'slug' => Str::slug($projet->titre)])}}">View Project</a>
             <hr/>
             <ul class="list-inline tags">
                 @foreach ($projet->tags as $tag)
