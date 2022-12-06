@@ -8,8 +8,8 @@ class ProjetsController extends Controller
 {
     public function index() {
         return view('projets.index', [
-            'projets' => Projet::orderBy('dateCreation', 'ASC')
-            ->take(5)->get()
+            'projets' => Projet::orderBy('dateCreation', 'DESC')
+            ->paginate(5)
         ]);
     }
 

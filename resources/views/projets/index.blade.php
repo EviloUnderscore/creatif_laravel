@@ -43,4 +43,6 @@
 
     @endforeach
 
+    {{$projets->links()}}
+
 @endsection
