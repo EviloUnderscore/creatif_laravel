@@ -4,10 +4,8 @@
         <div class="col-lg-8">
 
             @yield('content')
-            
-        </div>
         <hr>
-
+        </div>
     @include('template.partials._sidebar')
 
     </div>
