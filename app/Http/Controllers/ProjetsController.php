@@ -16,4 +16,8 @@ class ProjetsController extends Controller
     public function show(Projet $projet){
         return view('projets.show', compact('projet'));
     }
+
+    public function create(){
+        return view('projets.create');
+    }
 }

@@ -20,6 +20,9 @@ Route::get('/projets/{projet}/{slug}.html', [\App\Http\Controllers\ProjetsContro
     ->whereNumber('id')
     ->name('projets.show');
 
+Route::get('/projets/create', [\App\Http\Controllers\ProjetsController::class, 'create'])
+    ->name('projets.create');
+
 Route::resource('projets', \App\Http\Controllers\ProjetsController::class);
 
 Route::get('/abonnes/store', [\App\Http\Controllers\AbonnesController::class, 'store'])
