@@ -12,6 +12,8 @@
       par
       <a href="artiste_details.html">{{$projet->creatif->pseudo}}</a> le {{Carbon\Carbon::parse($projet->dateCreation)->format('d-m-Y')}}
     </p>
+    <a href="" class="btn btn-primary">Edit</a>
+    <a href="" class="btn btn-secondary">Delete</a>
 
     <hr>
 
